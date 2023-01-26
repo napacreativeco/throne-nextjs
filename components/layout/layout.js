@@ -136,7 +136,7 @@ export default function Layout({ children }) {
                 ]}
             />
 
-            <NavbarModal isOpen={isOpen} setIsOpen={setIsOpen} isDisplay={isDisplay} setIsDisplay={setIsDisplay} />
+            <NavbarModal isOpen={isOpen} />
 
             {/* CONTENT */}
             <MainContainer>

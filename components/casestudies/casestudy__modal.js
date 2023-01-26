@@ -6,7 +6,7 @@ import { handleClientScriptLoad } from "next/script";
 
 const ModalStyles = styled.div`
     position: fixed;
-    top: 0px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -76,14 +76,14 @@ const ModalClose = styled.div`
     }
 `;
 
-export default function CaseStudyModal({ targetClient, openCS, setOpenCS, isDisplay }) {
+export default function CaseStudyModal({ targetClient, openCS, setOpenCS }) {
 
     const handleClick = (e) => {
         setOpenCS('0vh');
     }
 
     return (
-        <ModalStyles style={{ height: openCS, display: isDisplay }}>
+        <ModalStyles style={{ height: openCS }}>
             <ModalContent>
 
                 <ModalClose>

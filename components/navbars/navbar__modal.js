@@ -3,12 +3,12 @@ import styled from "styled-components";
 const ModalStyles = styled.div`
     display: block;
     position: fixed;
-    top: 100vh;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 0vh;
     float: left;
     z-index: 999;
     overflow: hidden;
@@ -16,14 +16,14 @@ const ModalStyles = styled.div`
 
     &:before {
         content: '';
-        top: inherit;
+        top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         float: left;
         z-index: -99;
         width: 100%;
-        height: auto;
+        height: inherit;
         backdrop-filter: blur(6px);
         position: fixed;
     }
@@ -31,7 +31,7 @@ const ModalStyles = styled.div`
 `;
 
 const ModalContent = styled.div`
-    height: 100vh;
+    height: 100%;
     position: relative;
 `;
 
@@ -84,10 +84,10 @@ const LinkList = styled.div`
     }
 `;
 
-export default function NavbarModal({ isOpen, isDisplay }) {
+export default function NavbarModal({ isOpen }) {
 
     return (
-        <ModalStyles style={{ top: isOpen, display: isDisplay }}>
+        <ModalStyles style={{ height: isOpen }}>
             <ModalContent>
                 <ModalRow>
 
