@@ -86,7 +86,7 @@ const DesktopBurger = styled.div`
 export default function Layout({ children }) {
 
     const [isOpen, setIsOpen] = useState('0vh');
-    const [isDisplay, setIsDisplay] = useState('0vh');
+    const [isDisplay, setIsDisplay] = useState('none');
 
     const handleClick = () => {
         if (isOpen == '0vh') {
