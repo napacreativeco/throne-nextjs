@@ -31,7 +31,8 @@ const ModalStyles = styled.div`
 `;
 
 const ModalContent = styled.div`
-    height: 100%;
+    height: inherit;
+    overflow: hidden;
     position: relative;
 `;
 
@@ -41,7 +42,8 @@ const ModalRow = styled.div`
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    height: 100%;
+    height: inherit;
+    overflow: hidden;
     padding: 20px 20px 40px 20px;
 `;
 
