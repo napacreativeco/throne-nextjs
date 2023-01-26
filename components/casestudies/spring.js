@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const CaseStudyContent = styled.article`
 
@@ -37,6 +38,8 @@ export default function SpringCaseStudy() {
                         Coming soon
                     </h3>
                     <p>Our Case Studies will be posted here shortly.</p>
+                    <br />
+                    <Link style={{ textDecoration: 'underline' }} href="https://gentlespring.co/">Check them out.</Link>
                 </div>
 
             </div>

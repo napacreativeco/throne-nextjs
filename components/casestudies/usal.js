@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const CaseStudyContent = styled.article`
 
@@ -47,6 +48,8 @@ export default function UsalCaseStudy() {
                         Coming soon
                     </h3>
                     <p>Our Case Studies will be posted here shortly.</p>
+                    <br />
+                    <Link style={{ textDecoration: 'underline' }} href="https://www.usalproject.com">Check them out.</Link>
                 </div>
 
             </div>
