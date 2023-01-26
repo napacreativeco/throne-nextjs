@@ -38,7 +38,7 @@ const ModalContent = styled.div`
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     margin-top: 20px;
-    height: 100vh;
+    height: 100%;
     position: relative;
 `;
 
