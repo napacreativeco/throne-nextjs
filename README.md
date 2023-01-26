@@ -1,3 +1,2 @@
 # Throne
 
-Version 1.
