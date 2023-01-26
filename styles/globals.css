@@ -1,9 +1,65 @@
+
+
+:root {
+  --black: #191919;
+  --black-dark: #090909;
+  --white: #fefefe;
+  --red: red;
+
+  --border-white: 2px solid var(--white);
+
+  --transition--global: all 0.2s ease 0.05s;
+
+  --hover-opacity: 0.6;
+
+  --component--side-margin: 20px;
+  --component--top-bottom-margin: 20px;
+
+  --migra: 'Migra Italic';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
 html,
 body {
+  background: var(--black);
+  color: var(--white);
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0px;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 0px;
+  border-left: var(--border-white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 0px;
+  border-top: var(--border-white);
+  border-bottom: var(--border-white);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgba(255,255,255,0.1); 
 }
 
 a {
@@ -20,6 +76,10 @@ img {
   height: auto;
 }
 
+svg {
+  overflow: visible;
+}
+
 h1,
 h2,
 p,
@@ -29,10 +89,82 @@ ul {
 
 ul {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+
+
+/*
+ * ============================
+ * Typography
+ * ============================
+ *
+ * Global styles for the Type
+ * on the page
+ *
+ */
+
+/* UNCUT SANS */
+@font-face {
+  font-family: 'Uncut';
+  src:  url('/fonts/Uncut-Sans-Book.woff2') format('woff2'),
+  url('/fonts/Uncut-Sans-Book.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Uncut Italic';
+  src:  url('/fonts/Uncut-Sans-BookItalic.woff2') format('woff2'),
+  url('/fonts/Uncut-Sans-BookItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Uncut Semibold';
+  src:  url('/fonts/Uncut-Sans-Semibold.woff2') format('woff2'),
+  url('/fonts/Uncut-Sans-Semibold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Uncut Semibod Italic';
+  src:  url('/fonts/Uncut-Sans-SemiboldItalic.woff2') format('woff2'),
+  url('/fonts/Uncut-Sans-SemiboldItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 600;
+}
+/* MIGRA */
+@font-face {
+  font-family: 'MG EL';
+  src:  url('/fonts/mg-el.woff2') format('woff2'),
+  url('/fonts/mg-el.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'MG ELI';
+  src:  url('/fonts/mg-eli.woff2') format('woff2'),
+  url('/fonts/mg-eli.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Uncut';
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1.accent, h2.accent, h3.accent, h4.accent, h5.accent, span.accent, a.accent, text.accent {
+  font-family: 'Migra Italic';
+  font-weight: 300;
+  font-style: italic;
+}
+
+p, li, span, div, a, button, td, th, input {
+  font-family: 'Uncut';
+  font-weight: 300;
+  font-style: normal;
 }

@@ -6,8 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "hamburger-react": "^2.5.0",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-animated-cursor": "^2.5.2",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "^1.3.5",
+    "react-water-wave": "^2.0.1"
+  },
+  "devDependencies": {
+    "styled-components": "^5.3.6"
   }
 }

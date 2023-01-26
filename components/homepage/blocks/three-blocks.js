@@ -1,0 +1,83 @@
+import styled from "styled-components";
+
+const BlocksContainer = styled.div`
+
+    border-bottom: var(--border-white);
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        height: 100%;
+    }
+
+    .cell:nth-child(1) {
+        border-right: var(--border-white);
+    }
+
+    .cell:nth-child(2) {
+        border-right: var(--border-white);
+    }
+
+`;
+
+
+const BlockStyle = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20%;
+    position: relative;
+    overflow: hidden;
+
+    .section-title {
+        font-size: 3em;
+        letter-spacing: -2px;
+        position: relative;
+        display: inline;
+    }
+
+    p {
+        font-size: 0.9rem;
+        letter-spacing: -0.5px;
+    }
+    
+`;
+
+export default function ThreeBlocks() {
+    return (
+        <BlocksContainer id="our-services">
+            <div className="row">
+
+                <BlockStyle className="cell">
+                    <div>
+                        <h3 className="section-title">Interface <span className="accent">Design</span></h3>
+                        <p className="p">
+                            websites, apps, desktop apps, dashboards
+                        </p>
+                    </div>
+                </BlockStyle>
+
+                <BlockStyle className="cell">
+                    <div>
+                        <h3 className="section-title">Website <span className="accent">Development</span></h3>
+                        <p className="p">
+                            traditional websites, wordpress themes, shopify themes, react.js, gatsby
+                        </p>
+                    </div>
+                </BlockStyle>
+
+                <BlockStyle className="cell">            
+                    <div>
+                        <h3 className="section-title">Business <span className="accent">Design</span></h3>
+                        <p className="p">
+                            pitch decks, brand guidelines, packaging, tradeshow, merchandise
+                        </p>
+                    </div>
+                </BlockStyle>
+            
+            </div>
+        </BlocksContainer>
+    )
+}
