@@ -40,6 +40,7 @@ const ModalContent = styled.div`
     margin-top: 20px;
     height: inherit;
     position: relative;
+    overflow: hidden ;
 `;
 
 const ModalRow = styled.div`
