@@ -22,6 +22,10 @@ const MainContainer = styled.div`
     grid-template-columns: 1fr 11fr;
     grid-gap: 0px;
     align-items: stretch;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 const ContentContainer = styled.main`
@@ -36,6 +40,10 @@ const LeftHand = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 `;
 
 const RightHand = styled.div`
@@ -48,19 +56,31 @@ const SideBarStyles = styled.aside`
     width: 100%;
     min-height: 100%;
 
-    .hamburger {
-        position: sticky;
-        display: flex;
-        justify-content: center;
-        top: 0;
-        left: 50%;
-        transition: var(--transition--global);
-    }
-    .hamburger:hover {
-        transform: rotate(180deg);
+`;
+
+const DesktopBurger = styled.div`
+
+    position: sticky;
+    top: 0;
+    left: 50%;
+
+    .hamburger-react {
+        margin: auto;
+        &:hover {
+
+            transform: rotate(180deg);
+        }
     }
 
+    z-index: 99999999;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 `;
+
 
 
 export default function Layout({ children }) {
@@ -84,16 +104,20 @@ export default function Layout({ children }) {
             </Head>
 
             <AnimatedCursor
-                innerSize={14}
-                outerSize={12}
-                color='193, 11, 111'
-                trailingSpeed={1}
-                outerAlpha={0.2}
-                innerScale={0.7}
-                outerScale={10}
+                innerSize={24}
+                outerSize={22}
+                color='30,144,255'
+                trailingSpeed={8}
+                outerAlpha={0.1}
+                innerScale={0.8}
+                outerScale={4}
+                innerStyle={{
+                    background: 'rgba(30,144,255, 0.8)'
+                  }}
                 outerStyle={{
-                    border: '0.2px solid #fff',
-                    background: 'transparent'
+                    border: '1px solid #fff',
+                    background: 'transparent',
+                    backdropFilter: 'invert(100%)'
                   }}
                 clickables={[
                     'a',
@@ -107,7 +131,8 @@ export default function Layout({ children }) {
                     'textarea',
                     'button',
                     '.mouse-big',
-                    '.link'
+                    '.link',
+                    '.burger--desktop'
                 ]}
             />
 
@@ -122,9 +147,9 @@ export default function Layout({ children }) {
 
                     {/* SIDEBAR */}
                     <SideBarStyles>
-                        <div className="hamburger" style={{ zIndex: '9999' }} onClick={handleClick}>
+                        <DesktopBurger className="burger--desktop" onClick={handleClick}>
                             <Hamburger />
-                        </div>
+                        </DesktopBurger>
                     </SideBarStyles>
 
                 </LeftHand>
@@ -134,7 +159,7 @@ export default function Layout({ children }) {
                 <RightHand id="righthand">
 
                     {/* NAVBAR */}
-                    <NavbarMain />
+                    <NavbarMain isOpen={isOpen} setIsOpen={setIsOpen} />
 
                     {/* PAGE CONTENT CONTAINER */}
                     <ContentContainer>

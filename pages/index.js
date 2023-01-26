@@ -7,6 +7,26 @@ import CaseStudyModal from "../components/casestudies/casestudy__modal";
 import ContactBlock from "../components/homepage/contact/contact";
 import { useState } from "react";
 
+import styled from "styled-components";
+
+const MarqueeDesktop = styled.div`
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+`;
+
+const MarqueeMobile = styled.div`
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+`;
+
 export default function Home() {
 
   const [openCS, setOpenCS] = useState('0vh');
@@ -23,20 +43,40 @@ export default function Home() {
 
       <Hero />
 
-      <Marquee
-        className="marquee"
-        pauseOnHover={false}
-        pauseOnClick={true}
-        gradient={false}
-        speed={140}
-        style={{
-          fontSize: '6vw',
-          letterSpacing: '-4px',
-          textTransform: 'uppercase',
-          borderBottom: 'var(--border-white)'
-      }}>
-        <p>throne is a design studio based in napa, california. we create clean and organized websites that generate leads.</p>
-      </Marquee>
+      <MarqueeDesktop>
+        <Marquee
+          className="marquee"
+          pauseOnHover={false}
+          pauseOnClick={true}
+          gradient={false}
+          speed={140}
+          style={{
+            fontSize: '6vw',
+            letterSpacing: '-4px',
+            textTransform: 'uppercase',
+            borderBottom: 'var(--border-white)'
+        }}>
+          <p>throne is a design studio based in napa, california. we create clean and organized websites that generate leads.</p>
+        </Marquee>
+      </MarqueeDesktop>
+
+      <MarqueeMobile>
+        <Marquee
+          className="marquee--mobile"
+          pauseOnHover={false}
+          pauseOnClick={true}
+          gradient={false}
+          speed={80}
+          style={{
+            fontSize: '12vw',
+            letterSpacing: '-4px',
+            textTransform: 'uppercase',
+            borderBottom: 'var(--border-white)'
+        }}>
+          <p>throne is a design studio based in napa, california. we create clean and organized websites that generate leads.</p>
+        </Marquee>
+      </MarqueeMobile>
+
 
       <ThreeBlocks />
 

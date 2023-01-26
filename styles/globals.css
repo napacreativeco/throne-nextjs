@@ -9,6 +9,7 @@
   --border-white: 2px solid var(--white);
 
   --transition--global: all 0.2s ease 0.05s;
+  --transition--global--timing: 0.2s ease 0.05s;
 
   --hover-opacity: 0.6;
 
@@ -167,4 +168,12 @@ p, li, span, div, a, button, td, th, input {
   font-family: 'Uncut';
   font-weight: 300;
   font-style: normal;
+}
+
+
+@media screen and (max-width: 767px) {
+  :root {
+    --component--side-margin: 10px;
+    --component--top-bottom-margin: 10px;
+  }
 }

@@ -43,16 +43,49 @@ const ContactStyle = styled.section`
         transform: rotate(180deg);
     }
 
+    @media screen and (max-width: 767px) {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+        gap: 0px 0;
+        position: relative;
+
+        .text p {
+            text-transform: lowercase;
+            font-size: 10vw;
+            letter-spacing: -4px;
+            word-spacing: 0px;
+            line-height: 0.8;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .line p {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .line img {
+            max-width: 80px;
+            margin: -4px 0px 0 8px;
+        }
+    }
+
 `;
 
 export default function ContactBlock() {
     return (
-        <ContactStyle>
+        <ContactStyle id="contact-throne">
             <div className="row">
                 <div className="text">
 
                     <div className="line">
-                        <p className="title-frag">Ready to <span className="accent">get going</span>(?)</p><br />
+                        <p className="title-frag">Ready to <span className="accent">get going</span>(?)</p>
                     </div>
                     
                     <div className="line">

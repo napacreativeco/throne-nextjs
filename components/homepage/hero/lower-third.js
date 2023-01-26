@@ -14,7 +14,6 @@ const LowerThirdStyles = styled.div`
         height: 100%;
     }
 
-
     /* Text */
     .text-column {
         border-right: var(--border-white);
@@ -64,6 +63,34 @@ const LowerThirdStyles = styled.div`
         display: flex;
         justify-content: center;
     }
+
+    @media screen and (max-width: 767px) {
+        height: 40vh;
+
+        .lt-row {
+            height: 100%;
+            grid-template-columns: auto;
+            align-items: stretch;
+            grid-template-areas:
+            "text text"
+            "work arrow";
+        }
+        .text-column {
+            grid-area: text;
+            border-right: 0px;
+            border-bottom: var(--border-white);
+            padding: 10px 0;
+        }
+        .work-column {
+            grid-area: work;
+            border-right: var(--border-white);
+        }
+        .arrow-column {
+            grid-area: arrow;
+        }
+        
+    }
+
 
 `;
 

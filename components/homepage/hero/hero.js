@@ -23,6 +23,7 @@ const HeroStyles = styled.div`
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 4.5vw;
     }
+
     .text p {
         text-transform: lowercase;
         font-size: 5vw;
@@ -50,6 +51,43 @@ const HeroStyles = styled.div`
 
     .extended-dash {
         letter-spacing: -2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+        gap: 0px 0;
+        height: calc(100vh - 80px);
+        position: relative;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+            height: 60vh;
+        }
+
+        .text p {
+            text-transform: lowercase;
+            font-size: 10vw;
+            letter-spacing: -4px;
+            word-spacing: 0px;
+            line-height: 0.8;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .text span.accent {
+            line-height: 1;
+        }
+
+        .row {
+            position: relative;
+            height: 100%;
+        }
     }
 `;
 

@@ -19,6 +19,32 @@ const BlocksContainer = styled.div`
         border-right: var(--border-white);
     }
 
+    @media screen and (max-width: 767px) {
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items:  stretch;
+            height: 100%;
+            width: 100vw;
+            
+        }
+        .cell {
+            div {
+                width: 100%;
+            }
+        }
+        .cell:nth-child(1) {
+            border-bottom: var(--border-white);
+            border-right: 0px;
+        }
+
+        .cell:nth-child(2) {
+            border-bottom: var(--border-white);
+            border-right: 0px;
+        }
+    }
+
+
 `;
 
 
@@ -30,10 +56,12 @@ const BlockStyle = styled.div`
     padding: 80px 20%;
     position: relative;
     overflow: hidden;
+    max-width: 100%;
 
     .section-title {
         font-size: 3em;
         letter-spacing: -2px;
+        line-height: 0.8;
         position: relative;
         display: inline;
     }
@@ -41,6 +69,12 @@ const BlockStyle = styled.div`
     p {
         font-size: 0.9rem;
         letter-spacing: -0.5px;
+        white-space: pre-wrap;
+        margin-top: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 80px 20px;
     }
     
 `;

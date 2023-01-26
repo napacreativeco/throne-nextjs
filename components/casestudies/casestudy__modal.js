@@ -13,7 +13,7 @@ const ModalStyles = styled.div`
     width: 100%;
     height: auto;
     float: left;
-    z-index: 999;
+    z-index: 9999999;
     overflow: hidden;
     cursor: default;
 
@@ -67,6 +67,12 @@ const ModalClose = styled.div`
         cursor: pointer !important;
         border-bottom: var(--border-white);
         background: transparent;
+    }
+
+    @media screen and (max-width: 767px) {
+        button {
+            padding: 20px;
+        }
     }
 `;
 

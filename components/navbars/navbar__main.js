@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import Hamburger from 'hamburger-react';
 
 const NavbarMainStyles = styled.div`
     .navbar__main--row {
@@ -8,7 +9,23 @@ const NavbarMainStyles = styled.div`
         grid-gap: 10%;
         padding: 10px 0;
     }
+    .navbar__mobile--row {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .navbar__main--row {
+            display: none;
+        }
+        .navbar__mobile--row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
 `;
+
+
 
 const CellLeft = styled.div`
 
@@ -18,6 +35,10 @@ const CellLeft = styled.div`
 
     img {
         height: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+        
     }
 `;
 
@@ -53,13 +74,17 @@ const CellCenter = styled.div`
     }
 
     li:hover a {
-        opacity: var(--hover-opacity);
+        color: rgb(30,144,255);
         transition: var(--transition-global);
     }
 
     @keyframes wider {
         0% { left: 50%; right: 50%; }
         100% { left: -10px; right: -10px; }
+    }
+
+    @media (max-width: 767px) {
+        display: none;
     }
 
 `;
@@ -69,7 +94,8 @@ const CellRight = styled.div`
         line-height: 0.8;
         display: flex;
         justify-content: flex-end;
-        font-size: 22px;
+        font-size: 18px;
+        white-space: nowrap;
     }
     .tagline span {
         font-family: var(--migra);
@@ -77,9 +103,58 @@ const CellRight = styled.div`
     }
 `;
 
-export default function NavbarMain() {
+
+const MobileBurger = styled.div`
+
+`;
+
+const MobileNav = styled.div`
+
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    @media screen and (max-width: 767px) {
+            display: block;
+            position: relative;
+            z-index: 999999;
+    }
+
+
+    max-width: 100vw;
+
+    img {
+        max-width: 45px;
+        align-self: flex-start;
+    }
+
+    .navbar__mobile--row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-gap: 10%;
+        padding: 10px 20px;
+
+    }
+
+`;
+
+export default function NavbarMain({ isOpen, setIsOpen }) {
+
+    const handleClick = () => {
+        if (isOpen == '0vh') {
+            setIsOpen('100vh');
+        } else {
+            setIsOpen('0vh');
+        }
+    }
+
     return (
         <NavbarMainStyles className="navbar__main">
+
+            {/*
+                NAVBAR DESKTOP
+            */}
             <div className="navbar__main--row">
                 <CellLeft>
                     <div className="logo">
@@ -95,7 +170,7 @@ export default function NavbarMain() {
                     <ul>
                         <li className="active mouse-big"><a href="/" title="Home">init</a></li>
                         <li className="mouse-big"><a href="#recent-projects" title="Projects">projects</a></li>
-                        <li className="mouse-big"><a href="#contact" title="Contact">contact</a></li>
+                        <li className="mouse-big"><a href="#contact-throne" title="Contact">contact</a></li>
                     </ul>
                 </CellCenter>
                 <CellRight>
@@ -104,6 +179,28 @@ export default function NavbarMain() {
                     </div>                   
                 </CellRight>
             </div>
+
+            {/*
+                NAVBAR MOBILE
+            */}
+            <MobileNav>
+                <div className="navbar__mobile--row">
+                    <div className="logo">
+                        <Image
+                            src="/svg/logo--triangle.svg"
+                            height={144}
+                            width={144}
+                            alt="Your Name"
+                        />
+                    </div>
+
+                    <MobileBurger className="burger--mobile" onClick={handleClick}>
+                            <Hamburger />
+                    </MobileBurger>
+                </div>
+            </MobileNav>
+
+
         </NavbarMainStyles>
     )
 }
