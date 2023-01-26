@@ -21,13 +21,13 @@ const HeroStyles = styled.div`
     .text {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
-        grid-gap: 4.5vw;
+        grid-gap: 7vh;
     }
 
     .text p {
         text-transform: lowercase;
-        font-size: 5vw;
-        letter-spacing: -.4vw;
+        font-size: 12vh;
+        letter-spacing: -.6vw;
         word-spacing: 1px;
         line-height: 0;
         text-align: center;
@@ -38,7 +38,7 @@ const HeroStyles = styled.div`
 
     .text span.accent {
         letter-spacing: -1px;
-        line-height: 0;
+        line-height: 0.3;
     }
 
     .line p {
@@ -101,7 +101,7 @@ export default function Hero() {
                         <p className="title-frag">We develop <span className="accent mouse-big">awesome</span></p>
                     </div>
                     <div className="line">
-                        <p className="title-frag">Websites <span className="extended-dash">------</span>&nbsp; and design</p>
+                        <p className="title-frag">Websites <span className="extended-dash">---</span>&nbsp;and design</p>
                     </div>
                     <div className="line">
                         <p className="title-frag"><span className="accent mouse-big">helpful</span> Graphics that</p>

@@ -11,7 +11,7 @@ const ModalStyles = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 0vh;
     float: left;
     z-index: 9999999;
     overflow: hidden;

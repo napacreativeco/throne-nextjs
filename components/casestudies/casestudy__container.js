@@ -18,8 +18,6 @@ export default function CaseStudyContainer(props) {
         return <BighouseCaseStudy />;
     }
     return (
-        <div>
-            There is no content here
-        </div>
+        <div></div>
     )
 }
