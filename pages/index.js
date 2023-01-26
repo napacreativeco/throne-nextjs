@@ -84,7 +84,7 @@ export default function Home() {
 
       <ContactBlock />
 
-      <CaseStudyModal openCS={openCS} setOpenCS={setOpenCS}  handleClick={handleClick} targetClient={targetClient} />
+      <CaseStudyModal style={{ height: openCS }} openCS={openCS} setOpenCS={setOpenCS}  handleClick={handleClick} targetClient={targetClient} />
 
     </Layout>
   )

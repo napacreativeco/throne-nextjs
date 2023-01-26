@@ -86,12 +86,17 @@ const DesktopBurger = styled.div`
 export default function Layout({ children }) {
 
     const [isOpen, setIsOpen] = useState('0vh');
+    const [isDisplay, setIsDisplay] = useState('0vh');
 
     const handleClick = () => {
         if (isOpen == '0vh') {
+            
+            setIsDisplay('block');
             setIsOpen('100vh');
         } else {
             setIsOpen('0vh');
+            
+            setIsDisplay('none');
         }
     }
 
@@ -136,7 +141,7 @@ export default function Layout({ children }) {
                 ]}
             />
 
-            <NavbarModal isOpen={isOpen} setIsOpen={setIsOpen} />
+            <NavbarModal isOpen={isOpen} setIsOpen={setIsOpen} isDisplay={isDisplay} setIsDisplay={setIsDisplay} />
 
             {/* CONTENT */}
             <MainContainer>

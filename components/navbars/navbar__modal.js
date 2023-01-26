@@ -84,10 +84,10 @@ const LinkList = styled.div`
     }
 `;
 
-export default function NavbarModal({ isOpen }) {
+export default function NavbarModal({ isOpen, isDisplay }) {
 
     return (
-        <ModalStyles style={{ top: isOpen }}>
+        <ModalStyles style={{ top: isOpen, display: isDisplay }}>
             <ModalContent>
                 <ModalRow>
 
