@@ -76,14 +76,14 @@ const ModalClose = styled.div`
     }
 `;
 
-export default function CaseStudyModal({ targetClient, openCS, setOpenCS }) {
+export default function CaseStudyModal({ targetClient, openCS, setOpenCS, isDisplay }) {
 
     const handleClick = (e) => {
         setOpenCS('0vh');
     }
 
     return (
-        <ModalStyles style={{ height: openCS }}>
+        <ModalStyles style={{ height: openCS, display: isDisplay }}>
             <ModalContent>
 
                 <ModalClose>

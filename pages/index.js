@@ -31,11 +31,14 @@ export default function Home() {
 
   const [openCS, setOpenCS] = useState('0vh');
   const [targetClient, setTargetClient] = useState('usal');
+  
+  const [isDisplay, setIsDisplay] = useState('none');
 
   const handleClick = (e) => {
     setOpenCS('100vh');
-
     setTargetClient(e.target.dataset.client);
+    setIsDisplay('block');
+    
   }
 
   return (
@@ -84,7 +87,7 @@ export default function Home() {
 
       <ContactBlock />
 
-      <CaseStudyModal style={{ height: openCS }} openCS={openCS} setOpenCS={setOpenCS}  handleClick={handleClick} targetClient={targetClient} />
+      <CaseStudyModal style={{ height: openCS, display: isDisplay }} openCS={openCS} setOpenCS={setOpenCS}  handleClick={handleClick} targetClient={targetClient} />
 
     </Layout>
   )
