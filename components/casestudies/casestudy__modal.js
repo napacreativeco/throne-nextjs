@@ -38,7 +38,7 @@ const ModalContent = styled.div`
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     margin-top: 20px;
-    height: 100%;
+    height: inherit;
     position: relative;
 `;
 
@@ -48,7 +48,7 @@ const ModalRow = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 100%;
+    height: inherit;
 `;
 
 const ModalClose = styled.div`
