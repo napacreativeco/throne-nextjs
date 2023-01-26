@@ -84,13 +84,13 @@ export default function CaseStudyModal({ targetClient, openCS, setOpenCS }) {
 
     return (
         <ModalStyles style={{ height: openCS }}>
-            <ModalContent>
+            <ModalContent  style={{ height: openCS }}>
 
                 <ModalClose>
                     <button onClick={handleClick}>Close</button>
                 </ModalClose>
 
-                <ModalRow>
+                <ModalRow  style={{ height: openCS }}>
                     
                     <CaseStudyContainer clientName={targetClient} />
 
