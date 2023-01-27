@@ -60,7 +60,7 @@ const HeroStyles = styled.div`
         justify-content: center;
         max-width: 100vw;
         gap: 0px 0;
-        height: calc(100vh - 80px);
+        min-height: calc(100vh - 80px);
         position: relative;
 
         .text {
