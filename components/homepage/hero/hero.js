@@ -94,7 +94,9 @@ const HeroStyles = styled.div`
 export default function Hero() {
     return (
         <HeroStyles className="hero">
+
             <div className="row">
+
                 <div className="text">
 
                     <div className="line">
@@ -111,6 +113,7 @@ export default function Hero() {
                     </div>
                 
                 </div>
+                
             </div>
 
             

@@ -65,7 +65,7 @@ const LowerThirdStyles = styled.div`
     }
 
     @media screen and (max-width: 767px) {
-        height: 40vh;
+        min-height: 40vh;
 
         .lt-row {
             height: 100%;
