@@ -64,7 +64,9 @@ const BlockStyle = styled.div`
         line-height: 0.8;
         position: relative;
         display: inline;
-        font-family: var(--migra);
+        span.accent {
+            font-family: var(--migra);
+        }
     }
 
     p {
