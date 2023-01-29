@@ -67,7 +67,7 @@ const ContactStyle = styled.section`
             font-family: var(--migra);
             font-size: 9.9vw;
             letter-spacing: -1px;
-            line-height: 1.04;
+            line-height: 1;
         }
 
         .line p {
