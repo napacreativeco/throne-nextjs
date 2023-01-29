@@ -97,7 +97,8 @@ const LinkList = styled.div`
 
 export default function NavbarModal({ isOpen }) {
 
-    const targ = isOpen;
+    const contact = document.getElementById('contact');
+    const projects = document.getElementById('projects');
 
     return (
         <ModalStyles className="modal-container" style={{ height: isOpen  }}>
@@ -110,9 +111,9 @@ export default function NavbarModal({ isOpen }) {
                         <ul>
                             <li className="active mouse-big"><a href="/" title="home">init</a></li>
                             <li className="spacer">|</li>
-                            <li className="mouse-big"><a href="/#projects" title="projects">projects</a></li>
+                            <li className="mouse-big"><a onClick={() => { setIsOpen('0vh'); projects.scrollIntoView({behavior:"smooth", block: "start"}) }} title="projects">projects</a></li>
                             <li className="spacer">|</li>
-                            <li className="mouse-big"><a href="/#contact" title="contact">contact</a></li>
+                            <li className="mouse-big"><a onClick={() => { setIsOpen('0vh'); contact.scrollIntoView({behavior:"smooth", block: "start"}) }} title="contact">contact</a></li>
                             <li className="spacer">|</li>
                             <li className="mouse-big"><a title="contact"><strike>behance</strike></a></li>
                         </ul>
