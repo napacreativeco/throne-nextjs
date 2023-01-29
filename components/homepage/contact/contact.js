@@ -54,8 +54,10 @@ const ContactStyle = styled.section`
         position: relative;
 
         .text {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-rows: repeat(3, 33.33%);
+            grid-gap: 0px;
+            max-width: 100vw;
         }
         .text p {
             text-transform: lowercase;
@@ -71,19 +73,20 @@ const ContactStyle = styled.section`
             font-size: 9.9vw;
             letter-spacing: -1px;
             line-height: 1.15;
+            display: inline-block;
         }
 
         .line p {
             display: flex;
             flex-direction: row;
-            gap: 6px;
+            gap: 10px;
             align-items: stretch;
             justify-content: center;
         }
 
         .line img {
             max-width: 80px;
-            margin: -4px 0px 0 8px;
+            margin: -4px 0px 0 6px;
         }
     }
 
