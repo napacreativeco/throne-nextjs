@@ -41,15 +41,15 @@
 /* MIGRA */
 @font-face {
   font-family: 'MG EL';
-  src:  url('/fonts/mg-el.woff2') format('woff2'),
-  url('/fonts/mg-el.woff') format('woff');
+  src:  url('/fonts/Migra-Extralight.woff2') format('woff2'),
+  url('/fonts/Migra-Extralight.woff') format('woff');
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: 'MG ELI';
-  src:  url('/fonts/mg-eli.woff2') format('woff2'),
-  url('/fonts/mg-eli.woff') format('woff');
+  src:  url('/fonts/Migra-ExtralightItalic.woff2') format('woff2'),
+  url('/fonts/Migra-ExtralightItalic.woff') format('woff');
   font-style: normal;
   font-weight: 600;
 }
