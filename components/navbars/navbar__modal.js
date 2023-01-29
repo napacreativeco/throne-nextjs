@@ -23,7 +23,7 @@ const ModalStyles = styled.div`
         float: left;
         z-index: -1;
         width: 100%;
-        height: 100%;
+        height: auto;
         backdrop-filter: blur(6px);
         position: fixed;
     }
