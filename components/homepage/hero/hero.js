@@ -106,7 +106,7 @@ export default function Hero() {
                         <p className="title-frag">We develop <span className="accent mouse-big">awesome</span></p>
                     </div>
                     <div className="line">
-                        <p className="title-frag">Websites <span className="extended-dash">--- </span>&nbsp; and design</p>
+                        <p className="title-frag">Websites <span className="extended-dash">--- </span> &nbsp; and design</p>
                     </div>
                     <div className="line">
                         <p className="title-frag"><span className="accent mouse-big">helpful</span> Graphics that</p>
