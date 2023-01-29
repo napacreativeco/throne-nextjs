@@ -57,13 +57,13 @@ const ContactStyle = styled.section`
             font-size: 10vw;
             letter-spacing: -4px;
             word-spacing: 0px;
-            line-height: 0.8;
+            line-height: 1;
             text-align: center;
             white-space: nowrap;
         }
         .text span.accent {
             letter-spacing: -1px;
-            line-height: 1.3;
+            line-height: 0.8;
         }
 
         .line p {
