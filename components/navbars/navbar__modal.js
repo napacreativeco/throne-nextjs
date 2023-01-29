@@ -23,9 +23,13 @@ const ModalStyles = styled.div`
         float: left;
         z-index: -1;
         width: 100%;
-        height: auto;
+        height: inherit;
         backdrop-filter: blur(6px);
         position: fixed;
+    }
+
+    @media screen and (max-width: 767px) {
+        backdrop-filter: blur(6px);
     }
 
 `;
