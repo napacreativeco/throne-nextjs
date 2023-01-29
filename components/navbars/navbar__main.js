@@ -131,7 +131,7 @@ const MobileNav = styled.div`
     .navbar__mobile--row {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         grid-gap: 10%;
         padding: 10px 20px;
 
@@ -185,6 +185,8 @@ export default function NavbarMain({ isOpen, setIsOpen }) {
             */}
             <MobileNav>
                 <div className="navbar__mobile--row">
+
+
                     <div className="logo">
                         <Image
                             src="/svg/logo--triangle.svg"
