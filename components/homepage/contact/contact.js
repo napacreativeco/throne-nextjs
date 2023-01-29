@@ -96,11 +96,11 @@ export default function ContactBlock() {
                 <div className="text">
 
                     <div className="line">
-                        <p className="title-frag">Ready to &nbsp;<span className="accent">get going</span>(?)</p>
+                        <p className="title-frag">Ready to <span className="accent">get going</span>(?)</p>
                     </div>
                     
                     <div className="line">
-                        <p className="title-frag"><span className="accent">email us</span>&nbsp; by clicking</p>
+                        <p className="title-frag"><span className="accent">email us</span> by clicking</p>
                     </div>
                     
                     <div className="line">

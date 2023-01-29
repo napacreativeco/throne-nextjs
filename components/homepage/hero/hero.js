@@ -65,11 +65,12 @@ const HeroStyles = styled.div`
         position: relative;
 
         .text {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            gap: 10px 0;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            justify-content: center;
+            grid-gap: 10px 0;
             margin: 10vw 0;
+            max-width: 100vw;
         }
 
         .text p {
