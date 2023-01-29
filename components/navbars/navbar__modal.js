@@ -14,7 +14,7 @@ const ModalStyles = styled.div`
     overflow: hidden;
     transition: var(--transition--global);
 
-
+    strike { pointer-events: none; }
 
     @media screen and (max-width: 767px) {
     }
@@ -114,7 +114,7 @@ export default function NavbarModal({ isOpen }) {
                             <li className="spacer">|</li>
                             <li className="mouse-big"><a href="#contact" title="contact">contact</a></li>
                             <li className="spacer">|</li>
-                            <li className="mouse-big"><a href="#contact" title="contact">behance</a></li>
+                            <li className="mouse-big"><a title="contact"><strike>behance</strike></a></li>
                         </ul>
                     </LinkList>
 
