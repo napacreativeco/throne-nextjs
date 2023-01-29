@@ -64,6 +64,8 @@ const LowerThirdStyles = styled.div`
         justify-content: center;
     }
 
+
+    
     @media screen and (max-width: 767px) {
         min-height: 40vh;
 
