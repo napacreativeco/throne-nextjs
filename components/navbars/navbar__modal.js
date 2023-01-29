@@ -14,22 +14,9 @@ const ModalStyles = styled.div`
     overflow: hidden;
     transition: var(--transition--global);
 
-    &:before {
-        content: '';
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        float: left;
-        z-index: -1;
-        width: 100%;
-        height: inherit;
-        backdrop-filter: blur(6px);
-        position: fixed;
-    }
+
 
     @media screen and (max-width: 767px) {
-        backdrop-filter: blur(6px);
     }
 
 `;
@@ -53,6 +40,20 @@ const ModalRow = styled.div`
     height: inherit;
     overflow: hidden;
     padding: 20px 20px 40px 20px;
+
+    &:before {
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        float: left;
+        z-index: -1;
+        width: 100%;
+        height: inherit;
+        backdrop-filter: blur(6px);
+        position: fixed;
+    }
 `;
 
 const Headline = styled.span`
