@@ -53,6 +53,7 @@ const HeroStyles = styled.div`
     .extended-dash {
         display: inline-block;
         letter-spacing: -2rem;
+        margin-right: 2rem;
     }
 
     @media screen and (max-width: 767px) {
