@@ -95,7 +95,7 @@ const LinkList = styled.div`
     }
 `;
 
-export default function NavbarModal({ isOpen }) {
+export default function NavbarModal({ isOpen, setIsOpen }) {
 
     const contact = document.getElementById('contact');
     const projects = document.getElementById('projects');
