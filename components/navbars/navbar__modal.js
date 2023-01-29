@@ -89,7 +89,7 @@ const LinkList = styled.div`
 export default function NavbarModal({ isOpen }) {
 
     return (
-        <ModalStyles style={{ height: isOpen }}>
+        <ModalStyles style={{ height: isOpen, ':before': isOpen }}>
             <ModalContent>
                 <ModalRow>
 
