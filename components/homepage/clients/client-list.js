@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ClientListStyle = styled.section`
     margin-top: 60px;
     padding: 0 20px;
+    max-width: calc(100% - 60px);
 
     @media screen and (max-width: 767px) {
         max-width: 100vw;
@@ -55,7 +56,7 @@ const Item = styled.li`
         font-size: 0.4em;
         letter-spacing: -2px;
         top: 0px;
-        right: 0px;
+        right: 10px;
     }
 
     @media screen and (max-width: 767px) {
