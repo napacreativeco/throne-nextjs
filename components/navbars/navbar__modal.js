@@ -38,6 +38,10 @@ const ModalContent = styled.div`
     height: inherit;
     overflow: hidden;
     position: relative;
+
+    @media screen and (max-width: 767px) {
+        backdrop-filter: blur(6px);
+    }
 `;
 
 const ModalRow = styled.div`
