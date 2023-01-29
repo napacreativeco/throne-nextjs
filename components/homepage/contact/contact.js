@@ -50,7 +50,7 @@ const ContactStyle = styled.section`
         flex-direction: column;
         justify-content: center;
         max-width: 100vw;
-        gap: 4px;
+        gap: 8px;
         position: relative;
 
         .text p {
@@ -63,6 +63,7 @@ const ContactStyle = styled.section`
             white-space: nowrap;
         }
         .text span.accent {
+            font-size: 0.9vw;
             letter-spacing: -1px;
             line-height: 0.9;
         }
