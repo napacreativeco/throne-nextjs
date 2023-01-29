@@ -39,6 +39,7 @@ const HeroStyles = styled.div`
     .text span.accent {
         letter-spacing: -1px;
         line-height: 0.3;
+        font-family: var(--migra);
     }
 
     .line p {

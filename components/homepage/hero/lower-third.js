@@ -32,12 +32,14 @@ const LowerThirdStyles = styled.div`
         border-right: var(--border-white);
         text-align: center;
         justify-content: center;
+        font-family: var(--migra);
         
         svg {
             max-width: 160px;
             margin: 0 auto;
             text {
                 font-size: 8rem;
+                font-family: var(--migra);
             }
         }
 
