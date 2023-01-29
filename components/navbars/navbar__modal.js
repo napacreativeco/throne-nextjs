@@ -18,6 +18,8 @@ const ModalStyles = styled.div`
     strike { pointer-events: none; }
 
     @media screen and (max-width: 767px) {
+
+        display: none !important;
     }
 
 `;

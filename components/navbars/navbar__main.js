@@ -194,9 +194,10 @@ export default function NavbarMain({ isOpen, setIsOpen }) {
                         />
                     </div>
 
-                    <MobileBurger className="burger--mobile" onClick={handleClick}>
+
+                    {/* <MobileBurger className="burger--mobile" onClick={handleClick}>
                             <Hamburger />
-                    </MobileBurger>
+                    </MobileBurger> */}
                 </div>
             </MobileNav>
 
