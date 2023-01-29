@@ -26,6 +26,17 @@ const CaseStudyContent = styled.article`
         font-size: 54px;
         letter-spacing: -2px;
     }
+
+    @media screen and (max-width: 767px) {
+        .title {
+            display: inline;
+            font-size: 64px;
+            letter-spacing: -4px;
+            line-height: 0.94;
+            text-decoration: none;
+            border-bottom: var(--border-white);
+        }
+    }
 `;
 
 export default function BighouseCaseStudy() {
