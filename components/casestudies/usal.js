@@ -49,7 +49,7 @@ export default function UsalCaseStudy() {
                     </h3>
                     <p>Our Case Studies will be posted here shortly.</p>
                     <br />
-                    <Link style={{ textDecoration: 'underline' }} href="https://www.usalproject.com">Check them out.</Link>
+                    <Link style={{ textDecoration: 'underline' }} href="https://www.usalproject.com">Check out the project.</Link>
                 </div>
 
             </div>

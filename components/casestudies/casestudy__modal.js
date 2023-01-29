@@ -41,6 +41,10 @@ const ModalContent = styled.div`
     height: inherit;
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 40px;
+    }
 `;
 
 const ModalRow = styled.div`
@@ -71,8 +75,10 @@ const ModalClose = styled.div`
     }
 
     @media screen and (max-width: 767px) {
+        top: 16px;
+
         button {
-            padding: 20px;
+            padding: 10px 20px;
         }
     }
 `;

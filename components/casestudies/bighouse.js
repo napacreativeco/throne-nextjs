@@ -39,7 +39,7 @@ export default function BighouseCaseStudy() {
                     </h3>
                     <p>Our Case Studies will be posted here shortly.</p>
                     <br />
-                    <Link style={{ textDecoration: 'underline' }} href="https://thisbighouse.xyz">Check them out.</Link>
+                    <Link style={{ textDecoration: 'underline' }} href="https://thisbighouse.xyz">Check out the project.</Link>
                 </div>
 
             </div>

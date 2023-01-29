@@ -39,7 +39,7 @@ export default function DominicCaseStudy() {
                     </h3>
                     <p>Our Case Studies will be posted here shortly.</p>
                     <br />
-                    <Link style={{ textDecoration: 'underline' }} href="https://dominicfike.com/">Check them out.</Link>
+                    <Link style={{ textDecoration: 'underline' }} href="https://dominicfike.com/">Check out the project.</Link>
                 </div>
 
             </div>
