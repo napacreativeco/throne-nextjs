@@ -80,6 +80,7 @@ const HeroStyles = styled.div`
             line-height: 0.8;
             text-align: center;
             white-space: nowrap;
+            gap: 10px;
         }
         .text span.accent {
             line-height: 1;
