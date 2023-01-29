@@ -51,6 +51,7 @@ const HeroStyles = styled.div`
     }
 
     .extended-dash {
+        display: inline-block;
         letter-spacing: -2rem;
     }
 
