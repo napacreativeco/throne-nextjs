@@ -50,7 +50,7 @@ const ModalRow = styled.div`
         float: left;
         z-index: -1;
         width: 100%;
-        height: inherit;
+        height: 100%;
         backdrop-filter: blur(6px);
         position: fixed;
     }
