@@ -101,6 +101,10 @@ export default function Layout({ children }) {
             <Head>
                 <title>throne</title>
                 <link rel="icon" href="/favicon.ico" />
+                <script
+                src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"
+                strategy="beforeInteractive"
+                ></script>
             </Head>
 
             <AnimatedCursor
