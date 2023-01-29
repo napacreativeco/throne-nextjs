@@ -21,9 +21,9 @@ const ModalStyles = styled.div`
         bottom: 0;
         left: 0;
         float: left;
-        z-index: -99;
+        z-index: -1;
         width: 100%;
-        height: inherit;
+        height: 100%;
         backdrop-filter: blur(6px);
         position: fixed;
     }
@@ -88,8 +88,10 @@ const LinkList = styled.div`
 
 export default function NavbarModal({ isOpen }) {
 
+    const targ = isOpen;
+
     return (
-        <ModalStyles style={{ height: isOpen, ':before': isOpen }}>
+        <ModalStyles className="modal-container" style={{ height: isOpen  }}>
             <ModalContent>
                 <ModalRow>
 
