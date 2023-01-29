@@ -61,6 +61,10 @@ const ContactStyle = styled.section`
             text-align: center;
             white-space: nowrap;
         }
+        .text span.accent {
+            letter-spacing: -1px;
+            line-height: 1.3;
+        }
 
         .line p {
             display: flex;
