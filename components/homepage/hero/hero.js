@@ -68,7 +68,7 @@ const HeroStyles = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: -2px;
+            gap: 0px;
             height: 60vh;
         }
 
