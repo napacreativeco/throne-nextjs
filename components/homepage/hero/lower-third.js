@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Image from "next/image";
-import Link from "next/link";
 
 const LowerThirdStyles = styled.div`
     
@@ -104,6 +103,10 @@ const CellStyles = styled.div`
 `;
 
 export default function LowerThird() {
+
+    const contact = document.getElementById('contact');
+    const projects = document.getElementById('projects');
+
     return (
         <LowerThirdStyles>
 
@@ -115,20 +118,20 @@ export default function LowerThird() {
                 </CellStyles>
 
                 <CellStyles className="work-column">
-                    <Link href="#recent-projects">
+                    <span onClick={() => { projects.scrollIntoView({behavior:"smooth", block: "start"}); }}>
                         Work
-                    </Link>
+                    </span>
                 </CellStyles>
 
                 <CellStyles className="arrow-column">
-                    <Link href="#our-services">
+                    <span onClick={() => { projects.scrollIntoView({behavior:"smooth", block: "start"}); }}>
                         <Image
                             src="/svg/arrow-right.svg"
                             height={64}
                             width={64}
                             alt="Your Name"
                         />
-                    </Link>
+                    </span>
                 </CellStyles>
             </div>
 
