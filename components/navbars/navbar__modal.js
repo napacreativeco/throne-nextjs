@@ -95,7 +95,7 @@ const LinkList = styled.div`
     }
 `;
 
-export default function NavbarModal({ isOpen, setIsOpen }) {
+export default function NavbarModal({ isOpen, handleClick }) {
 
     const contact = document.getElementById('contact');
     const projects = document.getElementById('projects');
@@ -111,9 +111,9 @@ export default function NavbarModal({ isOpen, setIsOpen }) {
                         <ul>
                             <li className="active mouse-big"><a href="/" title="home">init</a></li>
                             <li className="spacer">|</li>
-                            <li className="mouse-big"><a onClick={(e) => { e.preventDefault(); setIsOpen('0vh'); projects.scrollIntoView({behavior:"smooth", block: "start"}) }} title="projects">projects</a></li>
+                            <li className="mouse-big"><a onClick={(e) => { e.preventDefault(); handleClick; projects.scrollIntoView({behavior:"smooth", block: "start"}) }} title="projects">projects</a></li>
                             <li className="spacer">|</li>
-                            <li className="mouse-big"><a onClick={(e) => { e.preventDefault(); setIsOpen('0vh'); contact.scrollIntoView({behavior:"smooth", block: "start"}) }} title="contact">contact</a></li>
+                            <li className="mouse-big"><a onClick={(e) => { e.preventDefault(); handleClick; contact.scrollIntoView({behavior:"smooth", block: "start"}) }} title="contact">contact</a></li>
                             <li className="spacer">|</li>
                             <li className="mouse-big"><a title="contact"><strike>behance</strike></a></li>
                         </ul>
