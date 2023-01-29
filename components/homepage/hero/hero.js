@@ -68,7 +68,7 @@ const HeroStyles = styled.div`
             display: grid;
             grid-template-rows: repeat(4, 25%);
             justify-content: center;
-            grid-gap: 10px 0;
+            grid-gap: 4px 0;
             margin: 10vw 0;
             max-width: 100vw;
         }
