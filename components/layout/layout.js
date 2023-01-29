@@ -89,7 +89,7 @@ export default function Layout({ children }) {
 
     const handleClick = () => {
         if (isOpen == '0vh') {
-            setIsOpen('calc(100vh - env(safe-area-inset-bottom))');
+            setIsOpen('100vh');
         } else {
             setIsOpen('0vh');
         }
