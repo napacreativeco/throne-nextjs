@@ -86,7 +86,7 @@ const HeroStyles = styled.div`
             gap: 10px;
         }
         .text span.accent {
-            line-height: 1.05;
+            line-height: 1.03;
         }
 
         .row {
