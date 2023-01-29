@@ -48,8 +48,8 @@
 }
 @font-face {
   font-family: 'MG ELI';
-  src:  url('/fonts/Migra-ExtralightItalic.woff2') format('woff2'),
-  url('/fonts/Migra-ExtralightItalic.woff') format('woff');
+  src:  url('/fonts/MigraItalic-ExtralightItalic.woff2') format('woff2'),
+  url('/fonts/MigraItalic-ExtralightItalic.woff') format('woff');
   font-style: normal;
   font-weight: 600;
 }
