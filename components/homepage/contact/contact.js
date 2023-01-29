@@ -64,7 +64,8 @@ const ContactStyle = styled.section`
             white-space: nowrap;
         }
         .text span.accent {
-            font-size: 0.9vw;
+            font-family: var(--migra);
+            font-size: 9.9vw;
             letter-spacing: -1px;
             line-height: 0.9;
         }
