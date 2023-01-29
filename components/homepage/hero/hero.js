@@ -66,7 +66,7 @@ const HeroStyles = styled.div`
 
         .text {
             display: grid;
-            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(4, 25%);
             justify-content: center;
             grid-gap: 10px 0;
             margin: 10vw 0;
