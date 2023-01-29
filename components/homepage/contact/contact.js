@@ -27,6 +27,7 @@ const ContactStyle = styled.section`
     .text span.accent {
         letter-spacing: -1px;
         line-height: 1;
+        font-family: var(--migra);
     }
 
     .line p {
