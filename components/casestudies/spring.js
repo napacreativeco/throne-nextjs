@@ -26,6 +26,16 @@ const CaseStudyContent = styled.article`
         font-size: 54px;
         letter-spacing: -2px;
     }
+
+    @media screen and (max-width: 767px) {
+        .intro-block {
+            padding: 20px 0;
+        }
+        .title {
+            line-height: 0.5;
+            border-bottom: 0px;
+        }
+    }
 `;
 
 export default function SpringCaseStudy() {

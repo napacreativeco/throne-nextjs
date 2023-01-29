@@ -3,40 +3,39 @@ import Link from "next/link";
 
 const CaseStudyContent = styled.article`
 
-    overflow: hidden; 
+overflow: hidden; 
 
-    .post-row {
-    }
+.post-row {
+}
 
-    .intro-block p {
-        margin-top: 40px;
+.intro-block p {
+    margin-top: 40px;
+}
+.title {
+    display: inline;
+    font-size: 64px;
+    letter-spacing: -4px;
+    border-bottom: var(--border-white);
+}
+.text-content {
+    position: relative;
+    font-size: 22px;
+}
+
+.cs-block h4 {
+    font-size: 54px;
+    letter-spacing: -2px;
+}
+
+@media screen and (max-width: 767px) {
+    .intro-block {
+        padding: 20px 0;
     }
     .title {
-        display: inline;
-        font-size: 64px;
-        letter-spacing: -4px;
-        border-bottom: var(--border-white);
+        line-height: 0.5;
+        border-bottom: 0px;
     }
-    .text-content {
-        position: relative;
-        font-size: 22px;
-    }
-
-    .cs-block h4 {
-        font-size: 54px;
-        letter-spacing: -2px;
-    }
-
-    @media screen and (max-width: 767px) {
-        .title {
-            display: inline;
-            font-size: 64px;
-            letter-spacing: -4px;
-            line-height: 0.94;
-            text-decoration: none;
-            border-bottom: var(--border-white);
-        }
-    }
+}
 `;
 
 export default function BighouseCaseStudy() {
