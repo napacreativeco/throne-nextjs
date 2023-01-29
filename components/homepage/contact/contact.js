@@ -51,9 +51,12 @@ const ContactStyle = styled.section`
         flex-direction: column;
         justify-content: center;
         max-width: 100vw;
-        gap: 8px;
         position: relative;
 
+        .text {
+            display: flex;
+            flex-direction: column;
+        }
         .text p {
             text-transform: lowercase;
             font-size: 10vw;
@@ -67,7 +70,7 @@ const ContactStyle = styled.section`
             font-family: var(--migra);
             font-size: 9.9vw;
             letter-spacing: -1px;
-            line-height: 1;
+            line-height: 1.15;
         }
 
         .line p {

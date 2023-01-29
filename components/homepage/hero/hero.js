@@ -67,9 +67,9 @@ const HeroStyles = styled.div`
         .text {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 0px;
-            height: 60vh;
+            justify-content: space-around;
+            gap: 10px 0;
+            margin: 10vw 0;
         }
 
         .text p {
@@ -83,7 +83,7 @@ const HeroStyles = styled.div`
             gap: 10px;
         }
         .text span.accent {
-            line-height: 1;
+            line-height: 1.05;
         }
 
         .row {
@@ -105,7 +105,7 @@ export default function Hero() {
                         <p className="title-frag">We develop <span className="accent mouse-big">awesome</span></p>
                     </div>
                     <div className="line">
-                        <p className="title-frag">Websites <span className="extended-dash">---</span>&nbsp;and design</p>
+                        <p className="title-frag">Websites <span className="extended-dash">---</span>&nbsp; and design</p>
                     </div>
                     <div className="line">
                         <p className="title-frag"><span className="accent mouse-big">helpful</span> Graphics that</p>
