@@ -24,10 +24,10 @@ const ModalStyles = styled.div`
         bottom: 0;
         left: 0;
         float: left;
-        z-index: -99;
+        z-index: 0;
         width: 100%;
         height: inherit;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(10px);
         position: fixed;
     }
 
@@ -37,7 +37,7 @@ const ModalContent = styled.div`
     background: var(--black-dark);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    margin-top: 20px;
+    margin: 60px 20px 0 20px;
     height: inherit;
     position: relative;
     overflow: hidden;

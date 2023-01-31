@@ -61,7 +61,7 @@ const ContactStyle = styled.section`
         }
         .text p {
             text-transform: lowercase;
-            font-size: 10vw;
+            font-size: 12vw; 
             letter-spacing: -4px;
             word-spacing: 0px;
             line-height: 1;
@@ -70,7 +70,7 @@ const ContactStyle = styled.section`
         }
         .text span.accent {
             font-family: var(--migra);
-            font-size: 9.9vw;
+            font-size: 10vw;
             letter-spacing: -1px;
             line-height: 1.15;
             display: inline-block;

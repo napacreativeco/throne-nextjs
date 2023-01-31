@@ -7,6 +7,7 @@ const FooterStyles = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;
+    padding: 14px;
 
     @media screen and (max-width: 767px) {
 
