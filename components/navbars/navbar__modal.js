@@ -43,8 +43,9 @@ const ModalRow = styled.div`
     height: inherit;
     overflow: hidden;
     padding: 20px 20px 40px 20px;
+    background: #292929;
 
-    &:before {
+    /* &:before {
         content: '';
         top: 0;
         right: 0;
@@ -53,10 +54,10 @@ const ModalRow = styled.div`
         float: left;
         z-index: -1;
         width: 100%;
-        height: 100%;
+        height: inherit;
         backdrop-filter: blur(6px);
         position: fixed;
-    }
+    } */
 `;
 
 const Headline = styled.span`
