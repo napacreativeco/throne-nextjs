@@ -4,6 +4,7 @@ import NavbarMain from "../navbars/navbar__main";
 import FooterMain from "../footer/footer__main";
 import NavbarModal from '../navbars/navbar__modal';
 import Hamburger from 'hamburger-react';
+import LoaderScreen from '../loader/loader-screen';
 
 import dynamic from 'next/dynamic'
 
@@ -136,6 +137,8 @@ export default function Layout({ children }) {
                 ]}
             />
 
+            <LoaderScreen />
+            
             <NavbarModal isOpen={isOpen} handleClick={handleClick} />
 
             {/* CONTENT */}
