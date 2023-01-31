@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import LowerThird from "./lower-third";
+import Image from "next/image";
 
 const HeroStyles = styled.div`
 
@@ -18,6 +19,18 @@ const HeroStyles = styled.div`
         justify-content: center;
     }
 
+    svg {
+        display: inline;
+        max-width: 60px;
+        fill: var(--white);
+        stroke: var(--white);
+    }
+
+    img {
+        margin: -7px 0px 0 10px;
+        max-width: 80px;
+    }
+
     .text {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -27,7 +40,7 @@ const HeroStyles = styled.div`
     .text p {
         text-transform: lowercase;
         font-size: 12vh;
-        letter-spacing: -.6vw;
+        letter-spacing: -.36vw;
         word-spacing: 1px;
         line-height: 0;
         text-align: center;
@@ -89,6 +102,11 @@ const HeroStyles = styled.div`
             line-height: 1;
         }
 
+        img {
+            margin: -2px 0px 0 6px;
+            max-width: 30px;
+        }
+
         .row {
             position: relative;
             height: 100%;
@@ -108,7 +126,7 @@ export default function Hero() {
                         <p className="title-frag">We develop <span className="accent mouse-big">awesome</span></p>
                     </div>
                     <div className="line">
-                        <p className="title-frag">Websites<span className="extended-dash">---</span> &nbsp;and design</p>
+                        <p className="title-frag">Websites <Image src="/svg/horiz-line.svg" height={60} width={140} alt="Your Name" /> and design</p>
                     </div>
                     <div className="line">
                         <p className="title-frag"><span className="accent mouse-big">helpful</span> Graphics that</p>

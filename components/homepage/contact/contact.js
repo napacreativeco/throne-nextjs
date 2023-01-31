@@ -107,7 +107,7 @@ export default function ContactBlock() {
                     </div>
                     
                     <div className="line">
-                        <p className="title-frag">on this <Image src="/svg/arrow-styled.svg" height={60} width={140} alt="Your Name" /> <Link href="mailto:contact@throne.work"><span className="accent">link</span></Link></p>
+                        <p className="title-frag">on this <Image src="/svg/arrow-styled.svg" height={60} width={140} alt="Contact us" /> <Link href="mailto:contact@throne.work"><span className="accent">link</span></Link></p>
                     </div>
                 </div>
             </div>
